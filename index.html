@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Weather App">
+    <meta name="keywords" content="weather,weather forecast,city">
+    <meta name="author" content="Aaditi415">
+
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+
+
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" href="icon/weather.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="wrapper img">
+        <header><i class='bx bx-left-arrow-alt'></i>Weather App</header>
+
+        <section class="input-part">
+            <p class="info-txt"></p>
+            <div class="content">
+                <input type="text" spellcheck="false" placeholder="Enter city name" required autofocus>
+                <div class="separator"></div>
+                <button>Get Device Location</button>
+            </div>
+        </section>
+
+        <section class="weather-part">
+
+            <div class="tb-details">
+                <div class="column first">
+                    <img src="icon/sunrise.png" style="width: 40px;height:40px"></img>
+                    <div class="details">
+                        <span id="sunrise">_</span>
+                        <p>Sunrise</p>
+                    </div>
+                </div>
+                <div class="column second">
+                    <img src='icon/Sunset.webp' style="width: 40px;height:40px"></img>
+                    <div class="details">
+                        <span id="sunset">_</span>
+                        <p>Sunset</p>
+                    </div>
+                </div>
+            </div>
+
+            <img src="" alt="Weather Icon" id="wIcon">
+            <div class="temp">
+                <span class="numb">_</span>
+                <span class="deg">°</span>C
+            </div>
+            <div class="weather">_ _</div>
+            <div class="location">
+                <i class='bx bx-map'></i>
+                <span>_, _</span>
+            </div>
+
+            <div class="tb-details">
+                <div class="column first">
+                    <i class='bx bxs-thermometer'></i>
+                    <div class="details">
+                        <div class="temp">
+                            <span class="numb-2">_</span>
+                            <span class="deg">°</span>C
+                        </div>
+                        <p>Feels like</p>
+                    </div>
+                </div>
+                <div class="column second">
+                    <i class='bx bxs-droplet-half'></i>
+                    <div class="details">
+                        <span id="humidity">_</span>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="tb-details">
+                <div class="column first">
+                    <img src="icon/wind.png" style="width: 30px;height:30px"></img>
+                    <div class="details">
+                        <span id="wind">_</span>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+                <div class="column second">
+                    <img src='icon/eye.png' style="width: 30px;height:30px"></img>
+                    <div class="details">
+                        <span id="visibility">_</span>
+                        <p>visibility</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
